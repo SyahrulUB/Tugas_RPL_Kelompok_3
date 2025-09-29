@@ -81,7 +81,9 @@ dot.node('Story',
          r'- contentURL: URL\l'
          r'- timestamp: DateTime\l'
          r'- duration: int = 24h\l|'
-         r'+ addView(viewer: User)\l}',
+         r'+ addView(viewer: User)\l'
+         r'+ addComment(comment: User)\l'
+         r'+ addSharing(sharing: User)\l}',
          fillcolor='lightcyan', style='filled,rounded')
 
 dot.node('Comment',
@@ -97,7 +99,9 @@ dot.node('DirectMessage',
          r'- content: String\l'
          r'- timestamp: DateTime\l'
          r'- isRead: boolean\l|'
-         r'+ markAsRead()\l}',
+         r'+ markAsRead()\l'
+         r'+ sendMessage()\l'
+         r'+ deleteMessage()\l}',
          fillcolor='lightcyan', style='filled,rounded')
 
 
